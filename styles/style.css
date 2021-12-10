@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 body ul {
@@ -35,6 +36,7 @@ body .firstSec {
 
 body .firstSec h2 {
   color: white;
+  font-weight: 100;
 }
 
 body .firstSec .firstSecBG {
