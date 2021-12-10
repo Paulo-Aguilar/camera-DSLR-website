@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+body ul li {
+  float: left;
+}
+
+body ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+body ul li:hover {
+  background-color: #111;
+}
+
+body .firstSec {
+  height: 100vh;
+}
+
+body .firstSec h2 {
+  color: white;
+}
+
+body .firstSec .firstSecBG {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */

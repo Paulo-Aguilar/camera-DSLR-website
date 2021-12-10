@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    li {
+        float: left;
+        a {
+            display: inline-flex;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          &:hover{
+            background-color: #111;
+          }
+      }
+  }
+  .firstSec{
+    height: 100vh;
+    h2{
+      color: white;
+    }
+    .firstSecBG{
+      height: 100%;
+        background-position: center;
+      background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+    }
+  }
+}
+
+  
