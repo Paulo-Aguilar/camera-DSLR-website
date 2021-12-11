@@ -4,30 +4,53 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-body ul {
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 12%;
+  background-color: #141414;
+}
+
+body header h3 {
+  color: white;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+body header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #141414;
 }
 
-body ul li {
-  float: left;
+body header ul li {
+  display: inline-block;
 }
 
-body ul li a {
+body header ul li a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: #9D9C9C;
+  padding: 8px 20px;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-body ul li:hover {
-  background-color: #111;
+body header ul li a:hover {
+  color: #868686;
 }
 
 body .firstSec {
