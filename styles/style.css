@@ -19,7 +19,7 @@ body header {
 }
 
 body header h3 {
-  color: white;
+  color: #ffffff;
   font-weight: 100;
   font-size: 24px;
 }
@@ -50,7 +50,7 @@ body header ul li a {
 }
 
 body header ul li a:hover {
-  color: #868686;
+  color: #ffffff;
 }
 
 body .firstSec {
@@ -58,8 +58,10 @@ body .firstSec {
 }
 
 body .firstSec h2 {
-  color: white;
+  color: #ffffff;
   font-weight: 100;
+  text-align: center;
+  padding-top: 500px;
 }
 
 body .firstSec .firstSecBG {

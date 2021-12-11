@@ -1,3 +1,8 @@
+$navColor: #141414;
+$mainText: #ffffff;
+$secText: #9D9C9C;
+
+
 body{
   margin: 0;
   padding: 0;
@@ -7,9 +12,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 12%;
-    background-color: #141414;
+    background-color: $navColor;
     h3{
-      color: white;
+      color: $mainText;
       font-weight: 100;
       font-size: 24px;
     }
@@ -18,22 +23,20 @@ body{
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #141414;
+      background-color: $navColor;
   
       li {
           display: inline-block;
           a {
               display: inline-flex;
-              color: #9D9C9C;
-              // text-align: center;
+              color: $secText;
               padding: 8px 20px;
               text-decoration: none;
               transition: all 0.3s ease 0s;
               font-size: 24px;
               font-weight:400;
               &:hover{
-                // background-color: #111;
-                color: #868686;
+                color: $mainText;
               }
             }
             
@@ -44,8 +47,10 @@ body{
   .firstSec{
     height: 100vh;
     h2{
-      color: white;
+      color: $mainText;
       font-weight: 100;
+      text-align: center;
+      padding-top: 500px;
     }
     .firstSecBG{
       height: 100%;
