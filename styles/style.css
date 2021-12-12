@@ -45,7 +45,7 @@ body header ul li a {
   text-decoration: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  font-size: 24px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -63,6 +63,27 @@ body .firstSec h2 {
   text-align: center;
   padding-top: 200px;
   font-size: 3rem;
+  /* animation*/
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body .firstSec .firstSecBG {
