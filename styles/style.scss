@@ -15,7 +15,7 @@ body{
     background-color: $navColor;
     h3{
       color: $mainText;
-      font-weight: 100;
+      font-weight: 300;
       font-size: 24px;
     }
     ul {
@@ -50,15 +50,18 @@ body{
       color: $mainText;
       font-weight: 100;
       text-align: center;
-      padding-top: 500px;
+      padding-top: 200px;
+      font-size: 3rem;
     }
     .firstSecBG{
-      height: 100%;
+      height: calc(100vh - 15px);
+      width: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
       z-index: -1;
+      
     }
   }
 }
