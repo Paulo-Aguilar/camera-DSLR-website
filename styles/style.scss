@@ -49,10 +49,11 @@ body{
     height: 100vh;
     h2{
       color: $mainText;
-      font-weight: 100;
+      font-weight: 300;
       text-align: center;
       padding-top: 200px;
       font-size: 3rem;
+      position: relative;
 
       /* animation*/
       -webkit-animation: fadein 2s; 
@@ -98,6 +99,16 @@ body{
       background-color: $mainBackground;
     }
   }
+  .icon{
+    text-align: center;
+    padding-top: 400px;
+
+    .fa-chevron-down{
+      color: $mainText;
+      z-index: 5;
+    }
+  }
+  
 }
 
   

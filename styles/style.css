@@ -59,10 +59,11 @@ body .firstSec {
 
 body .firstSec h2 {
   color: #ffffff;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   padding-top: 200px;
   font-size: 3rem;
+  position: relative;
   /* animation*/
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
@@ -94,5 +95,15 @@ body .firstSec .firstSecBG {
   -o-object-fit: scale-down;
      object-fit: scale-down;
   background-color: #000000;
+}
+
+body .icon {
+  text-align: center;
+  padding-top: 400px;
+}
+
+body .icon .fa-chevron-down {
+  color: #ffffff;
+  z-index: 5;
 }
 /*# sourceMappingURL=style.css.map */
