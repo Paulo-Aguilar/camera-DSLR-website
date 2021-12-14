@@ -1,6 +1,7 @@
 $navColor: #141414;
 $mainText: #ffffff;
 $secText: #9D9C9C;
+$mainBackground: #000000;
 
 
 body{
@@ -86,14 +87,15 @@ body{
         }
     }
     .firstSecBG{
-      height: calc(100vh - 15px);
+      height: calc(100% - 15px);
       width: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
       position: absolute;
       z-index: -1;
-      
+      object-fit: scale-down;
+      background-color: $mainBackground;
     }
   }
 }

@@ -87,12 +87,12 @@ body .firstSec h2 {
 }
 
 body .firstSec .firstSecBG {
-  height: calc(100vh - 15px);
+  height: calc(100% - 15px);
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   z-index: -1;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  background-color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
