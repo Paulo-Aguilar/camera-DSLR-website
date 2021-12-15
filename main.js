@@ -5,7 +5,7 @@ menu_btn.addEventListener('click', ()=>{
         menu_btn.classList.add('open');
         menu_open=true;
     }else{
-        menu_btn.classList.add('open');
+        menu_btn.classList.remove('open');
         menu_open=false;
     }
 });
