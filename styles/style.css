@@ -37,9 +37,7 @@ body header ul li {
 }
 
 body header ul li a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   color: #9D9C9C;
   padding: 8px 20px;
   text-decoration: none;
@@ -53,17 +51,129 @@ body header ul li a:hover {
   color: #ffffff;
 }
 
-body header ul .menuBtn {
-  position: relative;
+body header ul li h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+body header ul li ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #141414;
+}
+
+body header ul li ul li {
+  display: inline-block;
+}
+
+body header ul li ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #9D9C9C;
+  padding: 8px 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+body header ul li ul li a:hover {
+  color: #ffffff;
+}
+
+body header ul li ul .menuBtn {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body header ul li ul .menuBtn .menuBtnBurger {
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body header ul li ul .menuBtn .menuBtnBurger::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: white;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body header ul li ul .menuBtn .menuBtnBurger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: white;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+body header ul li ul .menuBtn .menuBtnBurger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+body header ul li ul .menuBtn .menuBtnBurger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
+body header ul li ul .open .menuBtnBurger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body header ul li ul .open .menuBtnBurger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+body header ul li ul .open .menuBtnBurger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+body header ul .menuBtn {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 80px;
   height: 80px;
   cursor: pointer;
