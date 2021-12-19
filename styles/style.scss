@@ -188,8 +188,12 @@ body{
     padding-top: 400px;
 
     .fa-chevron-down{
-      color: $mainText;
+      color: $secText;
       z-index: 5;
+      &:hover{
+        color: $mainText;
+        transition: ease-in-out .2s;
+      }
     }
   }
 

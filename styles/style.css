@@ -215,7 +215,13 @@ body header .open .menuBtnBurger::after {
 }
 
 .icon .fa-chevron-down {
-  color: #ffffff;
+  color: #9D9C9C;
   z-index: 5;
+}
+
+.icon .fa-chevron-down:hover {
+  color: #ffffff;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
 }
 /*# sourceMappingURL=style.css.map */
