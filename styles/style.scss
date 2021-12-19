@@ -177,6 +177,10 @@ body{
       z-index: -1;
       object-fit: scale-down;
       background-color: $mainBackground;
+      @media (max-width: $phone) {
+        object-fit: cover; 
+        object-position: 40% 0;
+      }
     }
   }
   .icon{

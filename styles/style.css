@@ -200,6 +200,15 @@ body header .open .menuBtnBurger::after {
   background-color: #000000;
 }
 
+@media (max-width: 600px) {
+  .firstSec .firstSecBG {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 40% 0;
+       object-position: 40% 0;
+  }
+}
+
 .icon {
   text-align: center;
   padding-top: 400px;
