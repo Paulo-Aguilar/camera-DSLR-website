@@ -166,6 +166,12 @@ body header .open .menuBtnBurger::after {
   animation: fadein 2s;
 }
 
+@media (max-width: 600px) {
+  .firstSec h2 {
+    font-size: 2.5rem;
+  }
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
