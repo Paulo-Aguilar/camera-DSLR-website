@@ -51,115 +51,19 @@ body header ul li a:hover {
   color: #ffffff;
 }
 
-body header ul li h3 {
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 24px;
+@media (max-width: 600px) {
+  body header ul li {
+    display: none;
+  }
 }
 
-body header ul li ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #141414;
+@media (max-width: 992px) {
+  body header ul li {
+    display: none;
+  }
 }
 
-body header ul li ul li {
-  display: inline-block;
-}
-
-body header ul li ul li a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: #9D9C9C;
-  padding: 8px 20px;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
-body header ul li ul li a:hover {
-  color: #ffffff;
-}
-
-body header ul li ul .menuBtn {
-  position: absolute;
-  top: 2rem;
-  right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-body header ul li ul .menuBtn .menuBtnBurger {
-  width: 40px;
-  height: 5px;
-  background-color: white;
-  border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-body header ul li ul .menuBtn .menuBtnBurger::before {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 5px;
-  background: white;
-  border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-body header ul li ul .menuBtn .menuBtnBurger::after {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 5px;
-  background: white;
-  border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-
-body header ul li ul .menuBtn .menuBtnBurger::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
-}
-
-body header ul li ul .menuBtn .menuBtnBurger::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-}
-
-body header ul li ul .open .menuBtnBurger {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-body header ul li ul .open .menuBtnBurger::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
-}
-
-body header ul li ul .open .menuBtnBurger::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
-}
-
-body header ul .menuBtn {
+body header .menuBtn {
   position: absolute;
   top: 2rem;
   right: 1rem;
@@ -181,7 +85,13 @@ body header ul .menuBtn {
   transition: all .5s ease-in-out;
 }
 
-body header ul .menuBtn .menuBtnBurger {
+@media (min-width: 992px) {
+  body header .menuBtn {
+    display: none;
+  }
+}
+
+body header .menuBtn .menuBtnBurger {
   width: 40px;
   height: 5px;
   background-color: white;
@@ -190,7 +100,7 @@ body header ul .menuBtn .menuBtnBurger {
   transition: all .5s ease-in-out;
 }
 
-body header ul .menuBtn .menuBtnBurger::before {
+body header .menuBtn .menuBtnBurger::before {
   content: '';
   position: absolute;
   width: 40px;
@@ -201,7 +111,7 @@ body header ul .menuBtn .menuBtnBurger::before {
   transition: all .5s ease-in-out;
 }
 
-body header ul .menuBtn .menuBtnBurger::after {
+body header .menuBtn .menuBtnBurger::after {
   content: '';
   position: absolute;
   width: 40px;
@@ -212,17 +122,17 @@ body header ul .menuBtn .menuBtnBurger::after {
   transition: all .5s ease-in-out;
 }
 
-body header ul .menuBtn .menuBtnBurger::before {
+body header .menuBtn .menuBtnBurger::before {
   -webkit-transform: translateY(-16px);
           transform: translateY(-16px);
 }
 
-body header ul .menuBtn .menuBtnBurger::after {
+body header .menuBtn .menuBtnBurger::after {
   -webkit-transform: translateY(16px);
           transform: translateY(16px);
 }
 
-body header ul .open .menuBtnBurger {
+body header .open .menuBtnBurger {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   background: transparent;
@@ -230,21 +140,21 @@ body header ul .open .menuBtnBurger {
           box-shadow: none;
 }
 
-body header ul .open .menuBtnBurger::before {
+body header .open .menuBtnBurger::before {
   -webkit-transform: rotate(45deg) translate(35px, -35px);
           transform: rotate(45deg) translate(35px, -35px);
 }
 
-body header ul .open .menuBtnBurger::after {
+body header .open .menuBtnBurger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
-body .firstSec {
+.firstSec {
   height: 100vh;
 }
 
-body .firstSec h2 {
+.firstSec h2 {
   color: #ffffff;
   font-weight: 300;
   text-align: center;
@@ -274,7 +184,7 @@ body .firstSec h2 {
   }
 }
 
-body .firstSec .firstSecBG {
+.firstSec .firstSecBG {
   height: calc(100% - 15px);
   width: 100%;
   position: absolute;
@@ -284,12 +194,12 @@ body .firstSec .firstSecBG {
   background-color: #000000;
 }
 
-body .icon {
+.icon {
   text-align: center;
   padding-top: 400px;
 }
 
-body .icon .fa-chevron-down {
+.icon .fa-chevron-down {
   color: #ffffff;
   z-index: 5;
 }
