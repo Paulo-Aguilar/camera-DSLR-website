@@ -51,35 +51,31 @@ body{
           height: 80px;
           cursor: pointer;
           transition: all .5s ease-in-out;
-          border: 3px solid white;
 
           .menuBtnBurger{
-            width: 50px;
-            height: 6px;
+            width: 40px;
+            height: 5px;
             background-color: white;
             border-radius: 5px;
-            box-shadow: 0 2px 5px white;
             transition: all .5s ease-in-out;
             
 
             &::before{
               content: '';
               position: absolute;
-              width: 50px;
-              height: 6px;
+              width: 40px;
+              height: 5px;
               background: white;
               border-radius: 5px;
-              box-shadow: 0 2px 5px white;
               transition: all .5s ease-in-out;
             }
             &::after{
               content: '';
               position: absolute;
-              width: 50px;
-              height: 6px;
+              width: 40px;
+              height: 5px;
               background: white;
               border-radius: 5px;
-              box-shadow: 0 2px 5px white;
               transition: all .5s ease-in-out;
             }
             &::before{
@@ -152,9 +148,6 @@ body{
     .firstSecBG{
       height: calc(100% - 15px);
       width: 100%;
-      // background-position: center;
-      // background-repeat: no-repeat;
-      // background-size: cover;
       position: absolute;
       z-index: -1;
       object-fit: scale-down;

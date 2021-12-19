@@ -69,16 +69,13 @@ body header ul .menuBtn {
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  border: 3px solid white;
 }
 
 body header ul .menuBtn .menuBtnBurger {
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 5px;
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px white;
-          box-shadow: 0 2px 5px white;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -86,12 +83,10 @@ body header ul .menuBtn .menuBtnBurger {
 body header ul .menuBtn .menuBtnBurger::before {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 5px;
   background: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px white;
-          box-shadow: 0 2px 5px white;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -99,12 +94,10 @@ body header ul .menuBtn .menuBtnBurger::before {
 body header ul .menuBtn .menuBtnBurger::after {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 5px;
   background: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px white;
-          box-shadow: 0 2px 5px white;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
