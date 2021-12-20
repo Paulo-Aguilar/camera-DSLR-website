@@ -1,0 +1,4 @@
+/* show navbar in responsive */
+nav ul.show{
+    left: 0;
+}

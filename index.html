@@ -18,31 +18,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;800;900&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
-    <!-- <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
-
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 
-
+    <!-- css -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <!-- navbar jquery -->
+    <script src="js/navbar.js"></script>
 
 </head>
 <body>
     <header>
         <h3>CAPTURE & SAVE</h3>
+        <div class="menuBtn" id="icon">
+            <div class="menuBtnBurger"></div>
+        </div>
         <nav>
             <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#Store">Store</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#Accessories">Accessories</a></li>
-                <li><a href="#Support">Support</a></li>
-                <div class="menuBtn">
-                    <div class="menuBtnBurger"></div>
+                <div class="navbar-links" id="Topnav">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#Store">Store</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Accessories">Accessories</a></li>
+                    <li><a href="#Support">Support</a></li>
+                    <script src="main.js"></script>
                 </div>
-                <script src="main.js"></script>
+                
             </ul>
         </nav>
         
