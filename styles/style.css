@@ -208,7 +208,7 @@ body header .open .menuBtnBurger::after {
 }
 
 .firstSec .firstSecBG {
-  height: calc(100% - 15px);
+  height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -226,19 +226,72 @@ body header .open .menuBtnBurger::after {
   }
 }
 
+.firstSec .icon {
+  text-align: center;
+  margin: auto;
+  padding-left: 50%;
+  position: absolute;
+  padding-top: 400px;
+  cursor: pointer;
+}
+
+.firstSec .icon .fa-chevron-down {
+  color: #9D9C9C;
+  z-index: 5;
+}
+
+.firstSec .icon .fa-chevron-down:hover {
+  color: #ffffff;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
 .secondSec .secondSecContent {
-  text-align: right;
-  padding-right: 20px;
+  position: absolute;
+  right: 10%;
+  padding-top: 50%;
+}
+
+@media (min-width: 600px) {
+  .secondSec .secondSecContent {
+    padding-top: 20%;
+  }
 }
 
 .secondSec .secondSecContent .secondSecH1 {
   font-size: 1.5rem;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  .secondSec .secondSecContent .secondSecH1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondSec .secondSecContent .secondSecH1 {
+    font-size: 3rem;
+  }
 }
 
 .secondSec .secondSecContent .secondSecH2 {
   font-size: 3.1875rem;
   font-weight: bold;
+  color: #ffffff;
   font-style: italic;
+}
+
+@media (min-width: 600px) {
+  .secondSec .secondSecContent .secondSecH2 {
+    font-size: 3.984rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondSec .secondSecContent .secondSecH2 {
+    font-size: 6.375rem;
+  }
 }
 
 .secondSec .secondSecContent ul {
@@ -257,28 +310,11 @@ body header .open .menuBtnBurger::after {
 .secondSec .secondSecBG {
   height: 100%;
   width: 100%;
-  position: absolute;
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 40% 0;
-     object-position: 40% 0;
+  -o-object-position: 60% 0;
+     object-position: 60% 0;
   background-color: #000000;
-}
-
-.icon {
-  text-align: center;
-  padding-top: 400px;
-}
-
-.icon .fa-chevron-down {
-  color: #9D9C9C;
-  z-index: 5;
-}
-
-.icon .fa-chevron-down:hover {
-  color: #ffffff;
-  -webkit-transition: ease-in-out .3s;
-  transition: ease-in-out .3s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -203,7 +203,7 @@ body{
         }
     }
     .firstSecBG{
-      height: calc(100% - 15px);
+      height: 100%;
       width: 100%;
       position: absolute;
       z-index: -1;
@@ -214,23 +214,63 @@ body{
         object-position: 40% 0;
       }
     }
+    .icon{
+    text-align: center;
+    margin: auto;
+    padding-left: 50%;
+    position: absolute;
+    padding-top: 400px;
+    cursor: pointer;
     
+
+    .fa-chevron-down{
+      color: $secText;
+      z-index: 5;
+      &:hover{
+        color: $mainText;
+        transition: ease-in-out .3s;
+      }
+    }
+  }
   }
    // second section
   .secondSec{
     .secondSecContent{
-      text-align: right;
-      padding-right: 20px;
+      position: absolute;
+      // text-align: right;
+      right: 10%;
+      padding-top: 50%;
+      // padding-right: 20px;
+      @media (min-width: $phone) {
+        padding-top: 20%;
+      }
       .secondSecH1{
         font-size: 1.5rem;
-        // color: $mainText;
+        color: $mainText;
+        @media (min-width: $phone) {
+          font-size: 2rem;
+        }
+        @media (min-width: $tablet) {
+          font-size: 3rem;
+        }
       }
       .secondSecH2{
         font-size: 3.1875rem;
         font-weight: bold;
-        // color: $mainText;
+        color: $mainText;
         font-style: italic;
+        @media (min-width: $phone) {
+          font-size: 3.984rem;
+        }
+        @media (min-width: $tablet) {
+          font-size: 6.375rem;
+        }
       }
+      // p{
+      //   font-size: 1rem;
+      //   color: $secText;
+      // }
+
       ul{
         list-style-type: none;
         li{
@@ -247,30 +287,15 @@ body{
     .secondSecBG{
       height: 100%;
       width:  100%;
-      position: absolute;
+      // position: relative;
       z-index: -1;
       object-fit: cover;
-      object-position: 40% 0;
+      object-position: 60% 0;
       background-color: $mainBackground;
       @media (max-width: $phone) {
         // object-fit: cover; 
         // object-position: 40% 0;
       }
     }  
-  }
-  .icon{
-    text-align: center;
-    // position: absolute;
-    padding-top: 400px;
-    // cursor: pointer;
-
-    .fa-chevron-down{
-      color: $secText;
-      z-index: 5;
-      &:hover{
-        color: $mainText;
-        transition: ease-in-out .3s;
-      }
-    }
   }
 
