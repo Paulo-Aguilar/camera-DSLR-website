@@ -249,7 +249,7 @@ body header .open .menuBtnBurger::after {
 .secondSec .secondSecContent {
   position: absolute;
   right: 10%;
-  padding-top: 50%;
+  padding-top: 60%;
 }
 
 @media (min-width: 600px) {
@@ -298,6 +298,10 @@ body header .open .menuBtnBurger::after {
   list-style-type: none;
 }
 
+.secondSec .secondSecContent ul li {
+  padding-top: 100px;
+}
+
 .secondSec .secondSecContent ul li a {
   font-size: 1.125rem;
   text-decoration: none;
@@ -307,7 +311,7 @@ body header .open .menuBtnBurger::after {
   font-weight: bold;
 }
 
-.secondSec .secondSecBG {
+.secondSec .secondSecBGopacity {
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -316,5 +320,12 @@ body header .open .menuBtnBurger::after {
   -o-object-position: 60% 0;
      object-position: 60% 0;
   background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .secondSec .secondSecBGopacity {
+    -o-object-position: 60% 0;
+       object-position: 60% 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
