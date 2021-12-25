@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body header {
@@ -14,12 +15,13 @@ body header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 12%;
+  padding: 10px 10%;
   background-color: #141414;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   body header {
+    padding: 1px 10%;
     padding-left: 5%;
   }
 }
@@ -185,7 +187,9 @@ body header .open .menuBtnBurger::after {
 
 @media (max-width: 600px) {
   .firstSec h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-top: 100px;
   }
 }
 
@@ -229,10 +233,17 @@ body header .open .menuBtnBurger::after {
 .firstSec .icon {
   text-align: center;
   margin: auto;
-  padding-left: 50%;
+  padding-left: 45%;
   position: absolute;
-  padding-top: 400px;
+  padding-top: 70%;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .firstSec .icon {
+    padding-left: 50%;
+    padding-top: 400px;
+  }
 }
 
 .firstSec .icon .fa-chevron-down {
@@ -253,6 +264,19 @@ body header .open .menuBtnBurger::after {
 }
 
 @media (min-width: 600px) {
+  .secondSec .secondSecContent {
+    right: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondSec .secondSecContent {
+    padding-top: 50%;
+    right: 15%;
+  }
+}
+
+@media (min-width: 992px) {
   .secondSec .secondSecContent {
     padding-top: 20%;
   }
@@ -300,6 +324,20 @@ body header .open .menuBtnBurger::after {
 
 .secondSec .secondSecContent ul li {
   padding-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .secondSec .secondSecContent ul li {
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondSec .secondSecContent ul li {
+    padding-top: 50%;
+    right: 15%;
+  }
 }
 
 .secondSec .secondSecContent ul li a {
