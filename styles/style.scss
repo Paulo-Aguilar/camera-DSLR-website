@@ -22,6 +22,8 @@ body{
     align-items: center;
     padding: 10px 10%;
     background-color: $navColor;
+    
+    
     @media (min-width: $laptop) {
       padding: 1px 10%;
       padding-left: 5%;
@@ -29,8 +31,9 @@ body{
     
     h3{
       color: $mainText;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 24px;
+      
 
     }
     ul {
@@ -165,9 +168,10 @@ body{
       padding-top: 200px;
       font-size: 3rem;
       position: relative;
+      text-transform: uppercase;
       @media (max-width: $phone) {
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: 1.5rem;
+        font-weight: 400;
         padding-top: 100px;
       }
       /* animation*/
