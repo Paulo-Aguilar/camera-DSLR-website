@@ -3,6 +3,7 @@ $navColor: #141414;
 $mainText: #ffffff;
 $secText: #9D9C9C;
 $mainBackground: #000000;
+$thirdSecBG: #c4c4c4;
 $red: #C33B2B;
 
 // breakpoints
@@ -340,5 +341,69 @@ body{
     //     }
     //   }  
     // }
-    
+  }
+   //third section
+  .thirdSec{
+    background-color: $thirdSecBG;
+    position: relative;
+    height: 100vh;
+    .thirdSecContent{
+      // padding-top: 50px;
+      // padding-left: 50px;
+      div{
+              padding-top: 50px;
+      padding-left: 50px;
+        h1{
+          color: $mainText;
+          font-size: 3rem;
+          text-transform: uppercase;
+        }
+      }
+      h2{
+        color: $mainText;
+        font-weight: bold;
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        padding-left: 50px;
+      }
+      ul{
+        list-style-type: none;
+        padding-left: 15px;
+        padding-top: 15px;
+        // text-align: center;
+
+        li{
+          a{
+            padding-top: 50px;
+            padding-left: 50px;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+            color: $red;
+            font-weight: bold;
+            
+          }
+        }
+      }
+      img{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: -35px;
+  
+      }    
+    }    
+  }
+
+  //fourth section
+  .fourthSec{
+    .fourthSecContent{
+      img{
+        width: 100px;
+      }
+    }
+    img{
+      width: 100px;
+    }
   }
