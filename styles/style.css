@@ -350,6 +350,12 @@ body header .open .menuBtnBurger::after {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .secondSec .secondSecContent ul li a {
+    font-size: 1.5rem;
+  }
+}
+
 .secondSec .secondSecBGopacity {
   height: 100%;
   width: 100%;
